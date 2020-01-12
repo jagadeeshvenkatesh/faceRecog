@@ -84,7 +84,7 @@ class App extends Component {
         .then(response => response.json())
         .then(response => {
         	if (response) {
-        		fetch('https://floating-plains-95280.herokuapp.com//image', {
+        		fetch('https://floating-plains-95280.herokuapp.com/image', {
 	         		method: 'put',
 	          	headers: {'Content-Type': 'application/json'},
 	          	body: JSON.stringify({ id: this.state.user.id })
