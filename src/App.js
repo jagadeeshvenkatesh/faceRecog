@@ -76,7 +76,7 @@ class App extends Component {
 
   	onButtonSubmit = () => {
   		this.setState({imageURL: this.state.input});
-  		fetch('https://floating-plains-95280.herokuapp.com/imageurl', {
+  		fetch('https://desolate-beyond-15820.herokuapp.com/imageurl', {
 	        method: 'post',
 	        headers: {'Content-Type': 'application/json'},
 	        body: JSON.stringify({ input: this.state.input })
@@ -84,7 +84,7 @@ class App extends Component {
         .then(response => response.json())
         .then(response => {
         	if (response) {
-        		fetch('https://floating-plains-95280.herokuapp.com/image', {
+        		fetch('https://desolate-beyond-15820.herokuapp.com/image', {
 	         		method: 'put',
 	          	headers: {'Content-Type': 'application/json'},
 	          	body: JSON.stringify({ id: this.state.user.id })
