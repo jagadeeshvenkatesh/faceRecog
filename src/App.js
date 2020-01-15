@@ -23,7 +23,7 @@ const particlesOptions = {
 }
 
 const initialState = {  
-      imput: '',
+      input: '',
       imageURL: '',
       box: {},
       route: 'SignIn',
